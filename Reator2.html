@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HIDROGENAÇÃO</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a class="active" href="index.html">HIDROGENAÇÃO</a>
+    </div>
+    
+    <!-- Menu lateral -->
+    <div class="sidenav">
+      <a href="#" class="active">Reator 02</a>
+      <a href="#" class="active">Reator 03</a>
+      <a href="#" class="active">Reator 04</a>
+      <a href="#" class="active">Reator 05</a>
+    </div>
+    
+    <!-- Conteúdo da página -->
+    <div style="margin-left:200px;padding:1px 16px;height:1000px;">
+      <h1>REATOR 02</h1>
+      <button id="iniciarReacao" onclick="abrirNovaReacao()">INICIAR REAÇÃO UMA NOVA REAÇÃO</button>
+      <label for="numeroBatelada">Número da Batelada:</label>
+      <input type="text" id="numeroBatelada" name="numeroBatelada"><br><br>
+      <button onclick="buscarDados()">PESQUISAR BATELADA</button>
+
+      
+      <div id="resultado">
+        <table>
+          <thead>
+            <tr>
+              <th>Batelada</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Hidrogênio</th>
+              
+              <th>Início do Aquecimento</th>
+              <th>Fim do Aquecimento</th>
+              <th>Temperatura</th>
+              <th>Próxima Amostra</th>  
+              <th>Iodo</th>
+              <th>catalisador</th>
+
+              <th>Início do Resfriamento</th>
+              <th>Operador</th>
+              <th>Numero da Carreta</th>
+              <th>Finalizado</th>
+            </tr>
+          </thead>
+          <tbody id="tabela">
+          </tbody>
+        </table>
+      </div>
+      
+      <h1>BATELADAS JÁ FINALIZADAS</h1>
+      <div id="tabela-resultados">
+        <table id="tabelaa">
+          <thead>
+            <tr>
+              <th>Batelada</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Hidrogênio Inicial</th>
+              <th>Início do Aquecimento</th>
+              <th>Fim do Aquecimento</th>
+              <th>Temperatura</th>
+              <th>Próxima Amostra</th>
+              <th>Iodo</th>
+              <th>Catalisador</th>
+              <th>Início do Resfriamento</th>
+              <th>Operador</th>
+              <th>Hidrogênio Final</th>
+              <th>Finalizado</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela">
+          </tbody>
+        </table>
+      </div>
+
+
+   
+      <script src="script.js"></script>
+      
+      </body>
+      </html>

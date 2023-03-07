@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="andamento.css">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Enviar dados para a API</title>
+  </head>
+  <body>
+
+  <div id="resultado">
+    <table>
+      <thead>
+        <tr>
+          <th>Batelada</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Hidrogênio</th>
+          
+          <th>Início do Aquecimento</th>
+          <th>Fim do Aquecimento</th>
+          <th>Temperatura</th>
+          <th>Próxima Amostra</th>  
+          <th>Iodo</th>
+          <th>catalisador</th>
+
+          <th>Início do Resfriamento</th>
+          <th>Operador</th>
+          <th>Numero da Carreta</th>
+          <th>Finalizado</th>
+        </tr>
+      </thead>
+      <tbody id="tabela">
+      </tbody>
+    </table>
+  </div>
+  <div id="pesquisa">
+    <label for="numeroBatelada">BUSCAR UMA BATELADA:</label>
+    <input type="text" id="numeroBatelada" name="numeroBatelada"><br><br>
+    <button onclick="buscarDados()">Buscar Dados</button>
+  </div>
+  
+    <form id="formu" onsubmit="event.preventDefault(); criarNovoRegistro()">
+      <label for="data">Data:</label>
+      <input type="text" id="data" name="data"><br>
+
+      <label for="hora">Hora:</label>
+      <input type="text" id="hora" name="hora"><br>
+
+      <label for="hidrogenioInicial">Hidrogênio:</label>
+      <input type="number" id="hidrogenioInicial" name="hidrogenioInicial"><br>
+
+      <label for="hidrogenioFinal">Numero da Carreta:</label>
+      <input type="number" id="hidrogenioFinal" name="hidrogenioFinal"><br>
+
+      <label for="inicioAquecimento">Início do Aquecimento:</label>
+      <input type="text" id="inicioAquecimento" name="inicioAquecimento"><br>
+
+      <label for="finalAquecimento">Final do Aquecimento:</label>
+      <input type="text" id="finalAquecimento" name="finalAquecimento"><br>
+
+      <label for="operador">Operador:</label>
+      <input type="text" id="operador" name="operador"><br>
+
+      <label for="iodo">Iodo:</label>
+      <input type="number" id="iodo" name="iodo"><br>
+
+      <label for="proximaAmostra">Próxima Amostra:</label>
+      <input type="text" id="proximaAmostra" name="proximaAmostra"><br>
+
+      <label for="inicioResfriamento">Início do Resfriamento:</label>
+      <input type="text" id="inicioResfriamento" name="inicioResfriamento"><br>
+
+      <label for="temperatura">Temperatura:</label>
+      <input type="number" id="temperatura" name="temperatura"><br>
+
+      <label for="batelada">Batelada:</label>
+      <input type="text" id="batelada" name="batelada"><br>
+
+      <label for="finalizado">Finalizado:</label>
+      <input type="checkbox" id="finalizado" name="finalizado"><br>
+
+      <input id="botao" type="submit" value="Enviar">
+ 
+    </form>
+    <div id="grafico">
+      
+    </div>
+  
+
+
+  
+    
+    <script src="script.js"></script>
+    <script src="scriptAndamento.js"></script>
+  </body>
+</html>

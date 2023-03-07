@@ -1,0 +1,170 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111010;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    width: 300px;
+    box-shadow: #000 0.2rem 0.2rem;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: #000 0.2rem 0.2rem;
+  }
+  
+  button:hover {
+    background-color: #818181;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #111010;
+    border-radius: 5px;
+    box-shadow: 0.2rem 0.2rem;
+
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #111010;
+    color: #ffffff;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #666;
+  }
+  
+  table td {
+    border-top: 1px solid #666;
+  }
+  
+  table tr:nth-child(even) td {
+    background-color: #555;
+  }
+  
+  table tr:hover td {
+    background-color: #666;
+  }
+        /* Estilo para a navbar */
+        .navbar {
+          background-color: #333;
+          overflow: hidden;
+          position: fixed;
+          width: 100%;
+        
+        }
+        
+        /* Estilo para os links na navbar */
+        .navbar a {
+          float: left;
+          color: #ffffff;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          box-shadow: #111 0.2rem 0.2rem;
+          margin: auto;
+        }
+        
+        /* Estilo para o link ativo na navbar */
+        .active {
+          box-shadow: #000 0.2rem 0.2rem;
+          background-color: #4CAF50;
+          margin-top: 1rem;
+        }
+        .active:hover{
+          height: 3%;
+        }
+        
+        /* Estilo para o menu lateral */
+        .sidenav {
+          margin-top: 5rem;
+          height: 80%;
+          width: 200px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 20px;
+          box-shadow: #000 0.2rem 0.2rem;
+        }
+        
+        /* Estilo para os links no menu lateral */
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #818181;
+          display: block;
+        }
+        
+        /* Estilo para o link ativo no menu lateral */
+        .sidenav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        /* Estilo para os links no hover no menu lateral */
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+ #iniciarReacao{
+  display: flex;
+  width: 41,2%;
+  height: 3.4rem;
+  margin: auto;
+  font-size: 2.3rem;
+  text-align: center;
+  
+}
+h1{
+  color: white;
+  margin-top: 3rem;
+ }
+ #chart_div{
+ margin-top: 5.3rem;
+ margin-left: 16rem;
+ }
+ .navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;}

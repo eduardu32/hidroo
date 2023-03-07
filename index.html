@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta charset="UTF-8">
+    <title>HIDROGENAÇÃO</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a  href="index.html" target="_self" class="active" id="home">HIDROGENAÇÃO</a>
+    </div>
+    
+    <!-- Menu lateral -->
+    <div class="sidenav">
+
+      <a href="Reator2.html" target="_self" class="active">Reator 02</a>
+      <a href="#" class="active">Reator 03</a>
+      <a href="#" class="active">Reator 04</a>
+      <a href="#" class="active">Reator 05</a>
+    </div>
+   
+
+    <h1>VISAO GERAL</h1>
+
+    <div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawVisualization);
+    
+        function drawVisualization() {
+          // Some raw data (not necessarily accurate)
+          var data = google.visualization.arrayToDataTable([
+  ['Dia', 'Turno A', 'Turno B', 'Turno C'],
+  ['Dia 1', 4000, 5000, 925 ],
+  ['Dia 2', 3000, 9225, 6675],
+  ['Dia 3', 2325, 5550, 8800 ],
+  ['Dia 4', 4450, 5575, 2025],
+  ['Dia 5', 2345, 4567, 7543 ],
+  ['Dia 6', 1234, 6025, 3075 ],
+  ['Dia 7', 9865, 1234, 4100],
+  ['Dia 8', 4000, 5000, 925 ],
+  ['Dia 9', 3000, 9225, 6675],
+  ['Dia 10', 2325, 5550, 8800 ],
+  ['Dia 11', 4450, 5575, 2025],
+  ['Dia 12', 2345, 4567, 7543 ],
+  ['Dia 13', 1234, 6025, 3075 ],
+]);
+    
+          var options = {
+            backgroundColor: '#212121',
+            title: 'TOTAL PRODUÇÃO ÚLTIMOS 12 DIAS',
+            titleTextStyle: {
+              color: '#fff',
+              fontSize: 24,
+              bold: true,
+            },
+            chartArea: {
+              width: '80%',
+              height: '70%',
+              left: '10%',
+            },
+            vAxis: {
+              title: 'Produção',
+              titleTextStyle: {
+                color: '#fff',
+                fontSize: 18,
+                bold: true,
+              },
+              textStyle: {
+                color: '#fff',
+                fontSize: 14,
+              },
+              gridlines: {
+                color: '#fff',
+                count: 12,
+              },
+            },
+            hAxis: {
+              title: 'Dia',
+              titleTextStyle: {
+                color: '#fff',
+                fontSize: 18,
+                bold: true,
+              },
+              textStyle: {
+                color: '#fff',
+                fontSize: 14,
+              },
+            },
+            legend: {
+              position: 'top',
+              alignment: 'end',
+              textStyle: {
+                color: '#fff',
+                fontSize: 14,
+              },
+            },
+            seriesType: 'bars',
+            series: {
+              0: { color: '#333333' },
+              1: { color: '#8B0000' },
+              2: { color: '#1E90FF' },
+              3: { type: 'line', color: '#F39C12' },
+            },
+          };
+    
+          var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+          chart.draw(data, options);
+        }
+      </script>
+      <div id="chart_div" style="height: 400px;width: 80%;"></div>
+    </div>
+    <div>
+      <h1>Hidrogênio</h1>
+      <h1>CARRETA NUMERO: 1122 = 20 bar</h1>
+      <h1>CARRETA NUMERO: 2233 = 120 bar</h1>
+    </div>
+      
+
+
+      </body>
+      </html>
