@@ -1,7 +1,7 @@
 async function buscarDados() {
   try {
     const numeroBatelada = document.getElementById("numeroBatelada").value;
-    const response = await axios.get(`http://localhost:3000/reator2/batelada?numeroBatelada=${numeroBatelada}`);
+    const response = await axios.get(`http://15.228.99.99:3000/reator2/batelada?numeroBatelada=${numeroBatelada}`);
 
     const data = response.data;
     console.log(data);
