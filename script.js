@@ -41,7 +41,7 @@ function abrirNovaReacao() {
 
 async function carregarDados() {
   try {
-    const response = await axios.get('http://localhost:3000/reator2/Finalizados');
+    const response = await axios.get('http://15.228.99.99:3000/reator2/Finalizados');
     const dados = response.data;
 
     const corpoTabela = document.getElementById('corpo-tabela');
